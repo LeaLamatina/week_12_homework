@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lea Lamatina - Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Homemade+Apple" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- Nav Bar to be used on each page -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">Lea Lamatina - PyWeather</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="C:/Users/leala/Documents/Data Git Repo/python-challenge/Boot Camp Homework/HTML_CSS/landing_page.html">Home</a></li>
+                <li><a href="C:/Users/leala/Documents/Data Git Repo/python-challenge/Boot Camp Homework/HTML_CSS/plots.html">Plots</a></li>
+                <li><a href="C:/Users/leala/Documents/Data Git Repo/python-challenge/Boot Camp Homework/HTML_CSS/comparison.html">Comparison</a></li>
+                <li><a href="C:/Users/leala/Documents/Data Git Repo/python-challenge/Boot Camp Homework/HTML_CSS/data.html">Data</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- Jumbotron for main page -->
+    <div class="jumbotron">
+        <h1 id="headertext">Lea Lamatina - Weather based on Latitude Study</h1>
+        <hr>
+        <p id="jumbotext">Visualizations and Comparisons of Weather Data</p>
+    </div>
+
+<!-- Boxes for main page -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7" id="mainbox">
+                <h3 id="interiorheader">Visualizations</h3>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3" id="interior-box">
+                            <h4>Humidity vs Latitude</h4>
+                            <a href="C:/Users/leala/Documents/Data Git Repo/python-challenge/Boot Camp Homework/HTML_CSS/lat_v_hum.html"><img width="250" src="C:/Users/leala/Documents/Data Git Repo/python-challenge/Boot Camp Homework/HTML_CSS/PyWeather Visualizations/Humidity_vs_Latitude.png"></a>
+                        </div>
+                        <div class="col-md-3" id="interior-box">
+                            <h4>Cloudiness vs Latitude</h4>
+                            <a href="C:/Users/leala/Documents/Data Git Repo/python-challenge/Boot Camp Homework/HTML_CSS/lat_v_cloud.html"><img width="250" src="C:/Users/leala/Documents/Data Git Repo/python-challenge/Boot Camp Homework/HTML_CSS/PyWeather Visualizations/Cloudiness_vs_Latitude.png"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3" id="interior-box">
+                            <h4>Temperature vs Latitude</h4>
+                            <a href="C:/Users/leala/Documents/Data Git Repo/python-challenge/Boot Camp Homework/HTML_CSS/lat_v_temp.html"><img width="250" src="C:/Users/leala/Documents/Data Git Repo/python-challenge/Boot Camp Homework/HTML_CSS/PyWeather Visualizations/Temp_vs_Latitude.png"></a>
+                        </div>
+                        <div class="col-md-3" id="interior-box">
+                            <h4>Wind Speed vs Latitude</h4>
+                            <a href="C:/Users/leala/Documents/Data Git Repo/python-challenge/Boot Camp Homework/HTML_CSS/lat_v_wind-speed.html"><img width="250" src="C:/Users/leala/Documents/Data Git Repo/python-challenge/Boot Camp Homework/HTML_CSS/PyWeather Visualizations/Wind_Speed_vs_Latitude.png"></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="col-md-4" id="mainbox">
+            <div class="row">
+                <h5 id="interiorheader">Project Explanation</h5>
+                <p id="landingtext">A minimum of 500 city GPS coordinates were generated and run through API calls to retrieve weather data.  Calls were completed on August 9th, 2018.  Information gatered included the following:</p>
+                <ul>Cloud density</ul>
+                <ul>Country</ul>
+                <ul>Humidity</ul>
+                <ul>Latitude and Longitude</ul>
+                <ul>City Name</ul>
+                <ul>Temperature</ul>
+                <ul>Wind Speed</ul>
+                <p id="landingtext">The purpose of the project was to plot Temperature, Wind Speed, and Cloudiness against Latitude to determine whether there exisited a correlation.</p>
+                <p id="landingtext">All visualizations were created using Matplotlib.</p>
+                <p id="landingtext">A complete list of the raw data is available on the under the Data tab.</p>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+</body>
+
+<footer>
+    <br>
+    <h5>created 2018 - for Washington University Data Analytics Bootcamp</h5>
+</footer>
+
+</html>
