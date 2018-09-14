@@ -3,33 +3,49 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Lea Lamatina - Home</title>
+    <title>Latitude vs Temperature</title>
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Homemade+Apple" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 <!-- Nav Bar to be used on each page -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand">Lea Lamatina - PyWeather</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="C:/Users/leala/Documents/Data Git Repo/python-challenge/Boot Camp Homework/HTML_CSS/landing_page.html">Home</a></li>
-                <li><a href="C:/Users/leala/Documents/Data Git Repo/python-challenge/Boot Camp Homework/HTML_CSS/plots.html">Plots</a></li>
-                <li><a href="C:/Users/leala/Documents/Data Git Repo/python-challenge/Boot Camp Homework/HTML_CSS/comparison.html">Comparison</a></li>
-                <li><a href="C:/Users/leala/Documents/Data Git Repo/python-challenge/Boot Camp Homework/HTML_CSS/data.html">Data</a></li>
-            </ul>
-        </div>
-    </nav>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+	<div class="navbar-header">
+		<a class="navbar-brand" style="color:rgb(54, 117, 11)" style="text-shadow: 1px 1px 2px rgb(44, 44, 44), 0 0 25px rgb(102, 102, 102)">Lea Lamatina - Weather Project</a>
+	</div>
 
-<!-- Page Header -->
-    <div class="container-fluid">
-        <div class="col-md-12">
-            <h1 id="headertext">Latitude vs Temperature Plot</h1>
-        </div>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+
+	<div class="collapse navbar-collapse">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item"><a class="nav-link" href="https://lealamatina.github.io/wk12.github.io/index.html">Home<span class="sr-only">(current)</span></a></li>
+			<li class="nav-item"><a class="nav-link" href="https://lealamatina.github.io/wk12.github.io/data.html">Data</a></li>
+			<li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" href="https://lealamatina.github.io/wk12.github.io/plots.html" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Visualizations</a>
+				<div class="dropdown-menu" aria-labelledby="dropdown01">
+					<a class="dropdown-item" href="https://lealamatina.github.io/wk12.github.io/lat_v_cloud.html">Cloudiness vs Latitude</a>
+					<a class="dropdown-item" href="https://lealamatina.github.io/wk12.github.io/lat_v_hum.html">Humidity vs Latitude</a>
+					<a class="dropdown-item active" href="https://lealamatina.github.io/wk12.github.io/lat_v_temp.html">Temperature vs Latitude</a>
+					<a class="dropdown-item" href="https://lealamatina.github.io/wk12.github.io/lat_v_wind-speed.html">Wind Speed vs Latitude</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="https://lealamatina.github.io/wk12.github.io/plots.html"><b>Comparitive Visualization Page</b></a></li>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+</nav>
+
+<!-- Jumbotron for the Lat v Temp page -->
+    <div class="jumbotron">
+        <h1 id="headertext">Latitude vs Temperature Plot</h1>
+        <hr>
+        <br>
     </div>
 
 <!-- Content portion -->
